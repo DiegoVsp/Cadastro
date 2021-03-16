@@ -1,10 +1,11 @@
 import './Logo.css'
 import React from 'react'
 import logo from '../../assets/images/logo.png'
+import {Link} from 'react-router-dom'
 
 export default props =>
   <aside className="logo">
-    <a href="/">
+    <Link to="/">
       <img src={logo} alt="Logo"/>
-    </a>
+    </Link>
   </aside>
