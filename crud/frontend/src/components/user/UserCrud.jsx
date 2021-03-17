@@ -34,6 +34,13 @@ export default class UserCrud extends Component {
     list.unshift(user)
     return list
   }
+
+  updateField(event) {
+    const user = { ...this.state.user }
+    user[event.target.name] = event.target.value
+    this.setState({ user })
+  }
+  renderForm
   render() {
     return (
       <Main {...headerProps}>
